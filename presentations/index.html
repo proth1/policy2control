@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policy2Control - Strategic Presentations</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #3b82f6;
+            --success-color: #059669;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .header .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+        }
+
+        .presentations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+        }
+
+        .presentation-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .presentation-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+        }
+
+        .presentation-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        .presentation-card h3 {
+            font-size: 1.3rem;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .presentation-card p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .access-info {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .access-info .icon {
+            color: #d97706;
+            margin-right: 0.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            margin-left: 0.5rem;
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .github-info {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+
+        .github-info h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .github-info p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .presentations-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Strategic Presentations</h1>
+            <div class="subtitle">Policy2Control Platform - Executive & Technical Documentation</div>
+        </div>
+
+        <div class="presentations-grid">
+            <div class="presentation-card">
+                <div class="presentation-icon">🤖</div>
+                <h3>🔒 Agentic SDLC Orchestration Platform</h3>
+                <p>
+                    <strong>Strategic White Paper Presentation:</strong> Comprehensive analysis of our 17-agent orchestration platform featuring Compliance-Driven Development (CDD) methodology. Includes interactive Mermaid diagrams, architecture analysis, and executive-ready strategic positioning.
+                </p>
+                
+                <div class="access-info">
+                    <span class="icon">🔐</span>
+                    <strong>Secure Access Required:</strong> This presentation contains strategic and confidential information. Access code required for entry.
+                </div>
+
+                <div class="presentation-features">
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>📊 Interactive Mermaid architecture diagrams</li>
+                        <li>🎯 17 specialized agent analysis</li>
+                        <li>📋 Novel CDD methodology documentation</li>
+                        <li>💼 Executive-ready business impact analysis</li>
+                        <li>🔍 Technical implementation details</li>
+                        <li>🚀 Future roadmap and evolution timeline</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 1.5rem;">
+                    <a href="agentic-sdlc-secure.html" class="btn btn-primary">🔓 Access Secure Presentation</a>
+                    <a href="../docs/01-strategic/white-papers/AGENTIC_SDLC_ORCHESTRATION_WHITE_PAPER.md" class="btn btn-secondary">📄 Technical Docs</a>
+                </div>
+
+                <div style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-secondary);">
+                    ⏱️ Duration: 15-20 minutes | 🔐 Access Code: Required
+                </div>
+            </div>
+        </div>
+
+        <div class="github-info">
+            <h4>📍 GitHub Pages Deployment</h4>
+            <p>This presentation is deployed via GitHub Pages for secure, reliable access. All presentations are version-controlled and automatically deployed from the repository.</p>
+        </div>
+    </div>
+</body>
+</html>
